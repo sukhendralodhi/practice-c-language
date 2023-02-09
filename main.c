@@ -43,6 +43,7 @@ int main(void) {
   */
 
   // sum of natural numbers
+  /*
   int num, i = 1, sum = 0;
 
   printf("Enter positive number: ");
@@ -57,4 +58,17 @@ int main(void) {
     i++;
   }
   printf("%d", sum);
+  */
+
+  // print sum of numbers until user put zero
+  double number, sum = 0;
+
+  do {
+    printf("Enter the number: ");
+    scanf("%lf", &number);
+    sum = sum + number;
+
+  } while (number != 0.0);
+
+  printf("Sum = %lf", sum);
 }
