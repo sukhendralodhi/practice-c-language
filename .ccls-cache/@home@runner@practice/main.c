@@ -28,18 +28,29 @@ int main(void) {
   */
 
   //swap number
-  int number1, number2;
-  printf("Enter the numbers: ");
-  scanf("%d%d",&number1,&number2);
+  // int number1, number2;
+  // printf("Enter the numbers: ");
+  // scanf("%d%d",&number1,&number2);
 
-  printf("Before swaping = %d\n%d\n",number1, number2);
+  // printf("Before swaping = %d\n%d\n",number1, number2);
   
-  int temp = number1;
-  number1=number2;
-  number2=temp;
+  // int temp = number1;
+  // number1=number2;
+  // number2=temp;
 
-  printf("After swaping = %d\n%d\n",number1, number2);
+  // printf("After swaping = %d\n%d\n",number1, number2);
 
+  // sum of natural numbers 
+  // int num,i,sum=0;
+
+  // printf("Enter positive number: ");
+  // scanf("%d",&num);
+
+  // for(i=1; i<=num; i++) {
+  //   sum = sum+i;
+  // }
+
+  // printf("%d",sum);
 
 
 
