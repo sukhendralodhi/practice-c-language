@@ -27,34 +27,34 @@ int main(void) {
   printf("%zu bytes\n",sizeof(f));
   */
 
-  //swap number
-  // int number1, number2;
-  // printf("Enter the numbers: ");
-  // scanf("%d%d",&number1,&number2);
+  // swap number
+  /*
+  int number1, number2;
+  printf("Enter the numbers: ");
+  scanf("%d%d",&number1,&number2);
 
-  // printf("Before swaping = %d\n%d\n",number1, number2);
-  
-  // int temp = number1;
-  // number1=number2;
-  // number2=temp;
+  printf("Before swaping = %d\n%d\n",number1, number2);
 
-  // printf("After swaping = %d\n%d\n",number1, number2);
+  int temp = number1;
+  number1=number2;
+  number2=temp;
 
-  // sum of natural numbers 
-  // int num,i,sum=0;
+  printf("After swaping = %d\n%d\n",number1, number2);
+  */
 
-  // printf("Enter positive number: ");
-  // scanf("%d",&num);
+  // sum of natural numbers
+  int num, i = 1, sum = 0;
+
+  printf("Enter positive number: ");
+  scanf("%d", &num);
 
   // for(i=1; i<=num; i++) {
   //   sum = sum+i;
   // }
 
-  // printf("%d",sum);
-
-
-
-
-
-  
+  while (i <= num) {
+    sum = sum + i;
+    i++;
+  }
+  printf("%d", sum);
 }
