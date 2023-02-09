@@ -73,8 +73,10 @@ int main(void) {
 
   printf("Sum = %lf", sum);
   */
-  // break keyword
 
+  
+  // break keyword
+  /*
   int i;
   double num, sum = 0.0;
   for(i=1; i<=10; ++i) {
@@ -83,6 +85,24 @@ int main(void) {
 
     if(num < 0.0) {
       break;
+    }
+    sum+=num;
+  }
+  printf("Sum = %.2lf", sum);
+  */
+
+
+  // continue keyword 
+
+  
+  int i;
+  double num, sum = 0.0;
+  for(i=1; i<=10; ++i) {
+    printf("Enter the value of num n%d: ",i);
+    scanf("%lf",&num);
+
+    if(num < 0.0) {
+      continue;;
     }
     sum+=num;
   }
