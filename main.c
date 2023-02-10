@@ -105,14 +105,26 @@ int main(void) {
   // }
   // printf("Sum = %.2lf", sum);
 
+    // swap number
+  /*
+  
   int num1 = 20, num2 = 30;
-  // int temp = num1;
-  // num1 = num2;
-  // num2 = temp;
+  int temp = num1;
+  num1 = num2;
+  num2 = temp;
 
   num1 = num1 + num2;
   num2 = num1 - num2;
   num1 = num1 - num2;
 
   printf("num1 = %d\nnum2 = %d", num1, num2);
+  */
+
+  float f,c;
+  printf("Enter temp in celsius: ");
+  scanf("%f",&c);
+
+  f = (c*9/5)+32;
+
+  printf("%f",f);
 }
