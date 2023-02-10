@@ -169,35 +169,60 @@ int main(void) {
   */
 
   // check number is palindrome or not
- 
-  int number, reminder, reverse = 0, digit_counter = 0;
+  /*
+   int number, reminder, reverse = 0, digit_counter = 0;
+   printf("Enter the number: ");
+   scanf("%d", &number);
+   int original = number;
+   int counter = number;
+
+   do {
+     counter /= 10;
+     ++digit_counter;
+   } while (counter != 0);
+
+   for (int i = 0; i < digit_counter; ++i) {
+     reminder = number % 10;
+     reverse = reverse * 10 + reminder;
+     number = number / 10;
+   }
+
+   if (original == reverse) {
+     printf("Number is palindrome, %d\n", reverse);
+   } else {
+     printf("Number is not palindrome, %d\n", reverse);
+   }
+
+   printf("\n");
+
+   printf("Number of digits = %d", digit_counter);
+   */
+
+  // Check number is armstrong or not
+  int number, reminder, sum = 0;
   printf("Enter the number: ");
   scanf("%d", &number);
   int original = number;
-  int counter = number;
+  // int counter = number;
 
-  do {
-    counter /= 10;
-    ++digit_counter;
-  } while (counter != 0);
+  // do {
+  //   counter /= 10;
+  //   ++digit_counter;
+  // } while (counter != 0);
 
-  for (int i = 0; i < digit_counter; ++i) {
+  for (int i = 0; i < 4; ++i) {
     reminder = number % 10;
-    reverse = reverse * 10 + reminder;
+    sum = sum + (reminder * reminder * reminder * reminder);
     number = number / 10;
   }
 
-  if (original == reverse) {
-    printf("Number is palindrome, %d\n", reverse);
+  if (original == sum) {
+    printf("Number is armstrong, %d\n", sum);
   } else {
-    printf("Number is not palindrome, %d\n", reverse);
+    printf("Number is not armstrong, %d\n", sum);
   }
 
-  printf("\n");
+  // printf("\n");
 
-  printf("Number of digits = %d", digit_counter);
-  
-
-  // Check number is armstrong or not 
-
+  // printf("Number of digits = %d", digit_counter);
 }
