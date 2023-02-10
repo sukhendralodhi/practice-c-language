@@ -105,9 +105,9 @@ int main(void) {
   // }
   // printf("Sum = %.2lf", sum);
 
-    // swap number
+  // swap number
   /*
-  
+
   int num1 = 20, num2 = 30;
   int temp = num1;
   num1 = num2;
@@ -120,6 +120,8 @@ int main(void) {
   printf("num1 = %d\nnum2 = %d", num1, num2);
   */
 
+  // tempretaure conversion
+  /*
   float f,c;
   printf("Enter temp in celsius: ");
   scanf("%f",&c);
@@ -127,4 +129,75 @@ int main(void) {
   f = (c*9/5)+32;
 
   printf("%f",f);
+  */
+
+  // enter 4 digit and calculate sum first and last digit
+  /*
+    int number;
+    printf("Enter number; ");
+    scanf("%d",&number);
+
+    int first = number / 1000;
+    int last = number % 10;
+    int sum = first + last;
+    printf("First = %d\n", first);
+
+    printf("Last = %d\n", last);
+
+    printf("Sum = %d\n",sum);
+    */
+
+  // calculate net and gross salary
+
+  /*
+  double basic_salary, net_salary, gross_salary, ta, pf;
+  printf("Enter the basic salary of employee: ");
+  scanf("%lf", &basic_salary);
+  int da = 500;
+  ta = (basic_salary * 10) / 100;
+  pf = (basic_salary * 7.8) / 100;
+
+  gross_salary = basic_salary + da + ta;
+  net_salary = gross_salary - pf;
+
+  printf("Travel Allowance = %.2lf\n", ta);
+  printf("Dearness Allowance = %d\n", da);
+  printf("Provident Fund = %.2lf\n", pf);
+
+  printf("Gross Salary = %.2lf\n", gross_salary);
+  printf("Net Salary = %.2lf\n", net_salary);
+  */
+
+  // check number is palindrome or not
+ 
+  int number, reminder, reverse = 0, digit_counter = 0;
+  printf("Enter the number: ");
+  scanf("%d", &number);
+  int original = number;
+  int counter = number;
+
+  do {
+    counter /= 10;
+    ++digit_counter;
+  } while (counter != 0);
+
+  for (int i = 0; i < digit_counter; ++i) {
+    reminder = number % 10;
+    reverse = reverse * 10 + reminder;
+    number = number / 10;
+  }
+
+  if (original == reverse) {
+    printf("Number is palindrome, %d\n", reverse);
+  } else {
+    printf("Number is not palindrome, %d\n", reverse);
+  }
+
+  printf("\n");
+
+  printf("Number of digits = %d", digit_counter);
+  
+
+  // Check number is armstrong or not 
+
 }
