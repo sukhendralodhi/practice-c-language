@@ -248,6 +248,7 @@ if (year % 400 == 0) {
 
 */
 
+/*
 // square
 void sqaure() {
   double a, area;
@@ -303,5 +304,21 @@ int main() {
 
   default:
     printf("You chhose wrong option\n");
+  }
+  */
+int main(void) {
+
+  char character;
+  int lower_case, upper_case;
+  printf("Enter the character: ");
+  scanf("%c", &character);
+
+  lower_case = (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u');
+  upper_case = (character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U');
+
+  if(lower_case || upper_case) {
+    printf("Vowel\n");
+  } else {
+    printf("Consonant\n");
   }
 }
