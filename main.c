@@ -74,7 +74,6 @@ int main(void) {
   printf("Sum = %lf", sum);
   */
 
-  
   // break keyword
   /*
   int i;
@@ -91,20 +90,29 @@ int main(void) {
   printf("Sum = %.2lf", sum);
   */
 
+  // continue keyword
 
-  // continue keyword 
+  // int i;
+  // double num, sum = 0.0;
+  // for(i=1; i<=10; ++i) {
+  //   printf("Enter the value of num n%d: ",i);
+  //   scanf("%lf",&num);
 
-  
-  int i;
-  double num, sum = 0.0;
-  for(i=1; i<=10; ++i) {
-    printf("Enter the value of num n%d: ",i);
-    scanf("%lf",&num);
+  //   if(num < 0.0) {
+  //     continue;;
+  //   }
+  //   sum+=num;
+  // }
+  // printf("Sum = %.2lf", sum);
 
-    if(num < 0.0) {
-      continue;;
-    }
-    sum+=num;
-  }
-  printf("Sum = %.2lf", sum);
+  int num1 = 20, num2 = 30;
+  // int temp = num1;
+  // num1 = num2;
+  // num2 = temp;
+
+  num1 = num1 + num2;
+  num2 = num1 - num2;
+  num1 = num1 - num2;
+
+  printf("num1 = %d\nnum2 = %d", num1, num2);
 }
