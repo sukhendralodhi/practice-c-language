@@ -306,6 +306,10 @@ int main() {
     printf("You chhose wrong option\n");
   }
   */
+
+// check character is vowel or not
+
+/*
 int main(void) {
 
   char character;
@@ -313,12 +317,124 @@ int main(void) {
   printf("Enter the character: ");
   scanf("%c", &character);
 
-  lower_case = (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u');
-  upper_case = (character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U');
+  lower_case = (character == 'a' || character == 'e' || character == 'i' ||
+character == 'o' || character == 'u'); upper_case = (character == 'A' ||
+character == 'E' || character == 'I' || character == 'O' || character == 'U');
 
   if(lower_case || upper_case) {
     printf("Vowel\n");
   } else {
     printf("Consonant\n");
   }
+  */
+/*
+int swap(int a, int b) {
+  int temp;
+  temp = a;
+  a = b;
+  b = temp;
+
+  printf("After swap\n");
+  printf("%d\n%d\n", a, b);
+}
+*/
+
+/*
+int swap(int a, int b) {
+  a = a+b;
+  b = a-b;
+  a = a-b;
+  printf("After swap\n");
+  printf("%d\n%d\n", a, b);
+
+}
+
+*/
+
+/*
+double triangle(double h, double b) {
+  double area = (h * b) / 2;
+  return area;
+}
+
+int main() {
+
+  // formula areaoftriangle: area  = (base*height)/2;
+  double height, base;
+  printf("Enter the height and base: ");
+  scanf("%lf%lf", &height, &base);
+
+  printf("Area of triangle = %0.2lf", triangle(height, base));
+
+  return 0;
+*/
+/*
+int main() {
+
+  // formula areaoftriangle: area  = (base*height)/2;
+  double radius, area;
+  const double pi = 3.14;
+  printf("Enter the height and base: ");
+  scanf("%lf", &radius);
+  area = pi * radius * radius;
+  printf("Area of Circle = %0.2lf", area);
+
+  return 0;
+  */
+
+/*
+int main() {
+
+  double principle, rate_interest, time, si;
+  printf("Enter the Principle, rate and time: ");
+  scanf("%lf%lf%lf", &principle, &rate_interest, &time);
+
+  // formula simple interest si = (p*r*t)/100;
+
+  si = (principle * rate_interest * time) / 100;
+
+  printf("SI = %0.2lf", si);
+
+  return 0;
+
+*/
+/*
+int main() {
+  float celsius, fahrenheit;
+  printf("Enter the temprature in celsius: ");
+  scanf("%f", &celsius);
+
+  // formula = (c*9/5)+32;
+
+  fahrenheit = (celsius * 9 / 5) + 32;
+
+  printf("Temprature in ahreneit = %.2ff\n", fahrenheit);
+
+  return 0;
+*/
+
+int main() {
+  int number, sum, original, reminder, count= 0;
+  printf("Enter the number 4 digit: ");
+  scanf("%d", &number);
+
+  original = number;
+
+  do{
+    original = original/10;
+    ++count;
+  }while(original != 0);
+
+  printf("Count = %d\n", count);
+
+  int first_digit = number / 1000;
+  int lats_digit = number % 10;
+
+  printf("First digit = %d\n", first_digit);
+  printf("Last digit = %d\n", lats_digit);
+
+    sum = first_digit + lats_digit;
+
+  printf("Sum of first digit and last digit = %d\n", sum);
+  return 0;
 }
